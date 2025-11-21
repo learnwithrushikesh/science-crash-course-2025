@@ -1,4 +1,4 @@
-# science-crash-course-2025
+# crash-course
 Science Crash Course Registration Website
 
  
