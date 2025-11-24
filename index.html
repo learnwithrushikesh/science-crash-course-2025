@@ -82,6 +82,45 @@
             font-weight: 600;
         }
         
+        .teacher-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .teacher-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid #ffd700;
+            object-fit: cover;
+            box-shadow: 0 15px 40px rgba(255,215,0,0.5);
+        }
+        
+        .teacher-info {
+            text-align: left;
+            color: white;
+        }
+        
+        .teacher-info h3 {
+            font-size: 2.2em;
+            font-weight: 800;
+            color: #ffd700;
+            margin-bottom: 8px;
+        }
+        
+        .teacher-info p {
+            font-size: 1.2em;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+        
         .highlight {
             color: #ffd700;
             font-weight: 700;
@@ -212,7 +251,6 @@
             margin-top: 10px;
         }
         
-        /* NEW: Registration Button Styles */
         .register-btn {
             display: inline-block;
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
@@ -246,7 +284,22 @@
         
         @keyframes blink {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+            50% { opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            .teacher-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .teacher-info {
+                text-align: center;
+            }
+            
+            .slide-1 h1 {
+                font-size: 2.5em;
+            }
         }
     </style>
 </head>
@@ -258,6 +311,18 @@
             <div style="font-size: 1.2em; font-style: italic; color: #ffd700; margin-bottom: 20px;">
                 Empowering Students, Delivering Results
             </div>
+            
+            <!-- Teacher Profile -->
+            <div class="teacher-profile">
+                <!-- REPLACE THIS URL WITH YOUR PHOTO -->
+                <img src="landing page image.png" alt="Rushikesh Sir" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Rushikesh Sir</h3>
+                    <p>Science Educator | 8+ Years Experience</p>
+                    <p style="font-size: 1em; margin-top: 5px;">Expert in 10th Board Science</p>
+                </div>
+            </div>
+            
             <div style="background: rgba(255,255,255,0.15); padding: 20px 40px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
                 <div style="font-size: 2.2em; font-weight: 700; color: white;">
                     SCIENCE CRASH COURSE
@@ -302,9 +367,9 @@
             
             <div style="margin-top: 30px; font-size: 1em;">
                 <strong style="font-size: 1.3em; color: #ffd700;">Learn With Rushikesh</strong><br>
-                By: Rushikesh Thorave Sir | Science Educator | 8+ Years of Teaching Excellence<br>
                 📅 Course Duration: 1st Dec 2025 - 15th Jan 2026<br>
-                🎯 Board Ready: Feb/March 2026 | 💻 Online Mode
+                🎯 Board Ready: Feb/March 2026 | 💻 Online Mode<br>
+                📧 Email: hrushi.thorave@gmail.com | 📱 WhatsApp: 9011141618
             </div>
         </div>
 
@@ -393,7 +458,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">💻</div>
                     <div class="feature-title">100% Online Convenience</div>
-                    <div class="feature-desc">Study from home comfort - recorded sessions for revision anytime, anywhere!</div>
+                    <div class="feature-desc">Study from home comfort - attend live sessions anytime, anywhere!</div>
                 </div>
                 
                 <div class="feature-card">
@@ -483,7 +548,7 @@
                         </div>
                         <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; display: inline-block; margin-bottom: 20px;">
                             📱 WhatsApp: <strong style="color: #ffd700;">9011141618</strong><br>
-                            📧 Email: <strong style="color: #ffd700;">rushit.2628@gmail.com</strong><br>
+                            📧 Email: <strong style="color: #ffd700;">hrushi.thorave@gmail.com</strong><br>
                             📸 Instagram: <strong style="color: #ffd700;">@learn_with_rushikesh</strong>
                         </div>
                         <br>
